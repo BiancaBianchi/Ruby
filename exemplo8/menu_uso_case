@@ -1,0 +1,27 @@
+#Escreva o menu de opcoes abaixo. Leia a opcao do usuario e execute a operacao escolhida. Escreva uma mensagem de erro se a opcao for invalida.Escolha a opcao:1- Soma de 2 numeros. 2- Diferenca entre 2 numeros (maior pelo menor).3- Produto entre 2 numeros.4- Divisao entre 2 numeros (o denominador n~ao pode ser zero).
+
+puts "digite um numero"
+a = gets.chomp.to_f
+puts "digite outro numero"
+b = gets.chomp.to_f
+
+puts "O que deseja fazer?\n"
+puts "1 - Soma\n2 - Subtracao \n3 - Multiplicacao\n4 - divisao\n"
+c = gets.chomp.to_i
+
+case c
+when 1
+  puts "A soma é #{a+b}"
+when 2
+  puts "A subtracao é #{a-b}"
+when 3
+  puts "A Multiplicacao é #{a*b}"
+when 4
+  if b !=0
+    puts "A divisao é #{a/b}"
+  else
+    puts "invalido"
+  end
+else
+  puts "numero invalido"
+end
