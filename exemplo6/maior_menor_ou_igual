@@ -1,0 +1,14 @@
+#Faca um programa que receba dois numeros e mostre o maior. Se por acaso, os dois numeros forem iguais, imprima a mensagem Numeros iguais.
+
+puts "Digite um numero"
+a = gets.chomp.to_i
+puts "Digite outro numero"
+b = gets.chomp.to_i
+
+if a < b
+  puts "Entre #{a} e #{b}, o maior é #{b}"
+elsif a > b
+  puts "Entre #{a} e #{b}, o maior é #{a}"
+else
+  puts "Os numeros sao iguais"
+end
