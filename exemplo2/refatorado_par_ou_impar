@@ -1,0 +1,10 @@
+#Refatorado : Par ou impar
+
+puts "Digite um numero"
+a = gets.chomp.to_i
+
+if a.even?()
+  puts "Par"
+else #Ou a.odd
+  puts "Impar"
+end
