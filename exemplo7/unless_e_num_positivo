@@ -1,0 +1,14 @@
+#uso do unless (executado quando e falso a condicao)
+
+#Faca um programa que leia um numero e, caso ele seja positivo, calcule e mostre: 1) O numero digitado ao quadrado e 2) A raiz quadrada do numero digitado
+
+puts "Digite um numero"
+a = gets.chomp.to_i
+
+unless a.negative?()
+  puts "O numero ao quadrado e #{a**2}"
+  puts " "
+  puts "A raiz quadrada do numero e #{Math.sqrt(a)}"
+else
+  puts "nao e par"
+end
