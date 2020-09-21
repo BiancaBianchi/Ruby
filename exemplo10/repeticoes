@@ -1,0 +1,27 @@
+#uso do for - varrer um array ou hash
+
+cores = ['preto', 'branco', 'azul', 'rosa']
+
+for cor in cores
+  puts cor
+end
+
+#times repeticao em um numero certo de vezes
+2.times do
+  puts 'Estou aprendendo times!'
+end
+ 
+names = ['João', 'Alfredo', 'Juca']
+# Igual ao array, o times começa com índice 0 
+3.times do |index|
+  puts names[index]
+end
+
+#estrutura de repeticao: do/while loop. Para somente quando o break for verdadeiro
+count = 1
+loop do 
+  puts count
+  break if count == 10
+  # Incrementa a variável count
+  count += 1
+end
