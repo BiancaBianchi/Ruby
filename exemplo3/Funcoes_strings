@@ -1,0 +1,8 @@
+#funcoes com strings
+nome = "Bianca"
+#tamanho da string
+puts(nome.length())
+#downcase
+puts(nome.downcase())
+#upcase
+puts(nome.upcase())
