@@ -1,0 +1,12 @@
+#arrays
+x = [1, 2,3]
+puts(x[0])
+
+#symbol
+#simbol é um objeto imutavel sendo apenas 1 objeto e sempre o mesmo id de memoria
+onebit_symbol = :ruby_symbol
+puts(onebit_symbol.object_id)
+
+#hash - chave/valor :dicionario
+hash = {course: 'ruby', language: 'pt-Br', locale: 'onebitcode.com'}
+puts(hash[:course])
