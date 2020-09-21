@@ -1,5 +1,6 @@
+#imprime nome e idade da pessoa em uma só frase
 puts "Digite seu nome"
-
 name = gets.chomp
-
-puts "Hello,#{name}"
+puts "Digite sua idade"
+old = gets.chomp
+puts "Hello,#{name} ! Você tem #{old} anos! Que velhinho hahah"
