@@ -1,0 +1,9 @@
+#Verifique se o numero informado é par/impar
+puts("Fale um numero")
+numero = gets()
+numero = numero.to_i()
+if numero % 2 == 0
+  puts("É par")
+else:
+  puts("É impar")
+end
