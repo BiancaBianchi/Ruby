@@ -1,0 +1,34 @@
+#Missão 1 - Crie um programa que possua um método que resolva a potência dado um número base e seu expoente. Estes dois valores devem ser informados pelo usuário.
+
+def pot(base, ex)
+  puts "O valor é #{base**ex}"
+end
+
+puts "diga a base"
+base = gets.chomp.to_i
+puts "diga o expoente"
+ex = gets.chomp.to_i
+
+pot(base, ex)
+ 
+
+#Missão 2 - Siga a documentação da gem cpf_cnpj para criar um programa que recebe como entrada um número de cpf e em um método verifique se este número é válido.Link da documntação: https://github.com/fnando/cpf_cnpj
+
+#gem install cpf_cnpj
+
+require "cpf_cnpj"
+ 
+def check_cpf(cpf_number)
+ if CPF.valid?(cpf_number)
+   return "O cpf informado é valido"
+ else
+   return "O cpf informado é invalido"
+ end
+end
+ 
+print 'Digite seu cpf: '
+cpf_number = gets.chomp.to_i
+ 
+result = check_cpf(cpf_number)
+ 
+puts result
