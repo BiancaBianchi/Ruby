@@ -1,0 +1,24 @@
+#manipulando hash
+#vazio
+capitais = Hash.new
+
+capitais = { acre: 'Rio Branco', sao_paulo: 'São Paulo'}
+puts capitais
+
+#adicionar novo item
+capitais[:minas_gerais] = "Belo Horizonte"
+
+#para mostrar as keys
+puts capitais.keys
+
+#mostrar os valores
+puts capitais.values
+
+#excluir key e valor
+capitais.delete(:acre)
+
+#tamanho
+puts capitais.size
+
+#se esta vazio ou nao
+puts capitais.empty?
