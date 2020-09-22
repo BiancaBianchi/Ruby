@@ -1,0 +1,43 @@
+#Manipulando colecoes
+
+lista =[]
+#adicionar termos na lista
+lista.push("oi")
+puts lista
+lista.push("tudo bem", "amanda")
+
+#ordem alfabetica
+
+lista.insert(0, 'Acre', 'Amapá')
+puts lista
+
+#mostra o 1 valor
+puts lista [0]
+
+#mostra os primeiros 2 valores
+puts lista [0...1]
+
+#penultimo
+puts lista [-2]
+
+#ultimo e primeiro
+puts lista.last
+puts lista.first
+
+#tamanho da lista
+puts lista.count
+
+#se esta vazio ou nao
+puts lista.empty?
+
+#se  valor esta no array
+lista.include?("oi")
+
+#excluir valores
+lista.delete_at(2)
+
+#excluir o ultimo
+lista.pop
+
+#excluir o primeiro
+lista.shift
