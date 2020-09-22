@@ -1,0 +1,5 @@
+require './animal_class.rb'
+ 
+animal = Animal.new
+ 
+animal.pular
