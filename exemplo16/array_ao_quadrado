@@ -1,0 +1,18 @@
+#Utilizando uma collection do tipo Array, escreva um programa que receba 3 números e no final exiba o resultado de cada um deles elevado a segunda potência.
+lista =[]
+puts "digite o primeiro numero"
+a = gets.chomp.to_i
+lista.push(a)
+puts "digite o segundo numero"
+b = gets.chomp.to_i
+lista.push(b)
+puts "digite o terceiro numero"
+c = gets.chomp.to_i
+lista.push(c)
+
+puts "Os numeros sao #{lista}"
+
+lista_nova = lista.map do |a| 
+             a ** 2
+           end
+puts "Os numeros ao quadrado sao #{lista_nova}"
