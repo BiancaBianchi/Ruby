@@ -1,0 +1,12 @@
+#oo1
+
+#aluno
+class Aluno
+  def initialize(nome, telefone, email)
+    @nome = nome 
+    @telefone = telefone
+    @email = email
+  end
+end
+
+ana = Aluno.new("ana", "999999", "aninha@aushau")
