@@ -1,4 +1,4 @@
-equire 'rest-client'
+require 'rest-client'
 require 'json'
 
 # Classe Tradutor
