@@ -1,0 +1,17 @@
+#leitura de arquivos em ruby
+puts "lista de compras"
+ 
+file = File.open('shopping.txt')
+ 
+file.each do |line|
+ puts line
+end
+
+#escrita de arquivos
+File.open('shopping.txt', 'a') do |line| #"a" nao sobrescreve, apenas coloca no final da lista
+ line.puts('arroz') #pula linha
+ line.puts('feijão')
+ line.print('azeite')
+ line.print(' de ') #print nao pula linha
+ line.print('oliva')
+end
